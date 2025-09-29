@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marco Varisco</title>
     <meta name="description" content="Marco Varisco, Associate Professor of Mathematics, University at Albany, State University of New York">
     <meta name="author" content="Marco Varisco">
-    <title>Marco Varisco</title>
-    <link href="code/bootstrap.min.css" rel="stylesheet">
-    <style>body{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; padding-top: 50px;} .main{padding: 20px 10px;} img.media-object{width: 64px; height: 90px; margin-right: 5px;} li.media{margin-bottom: 40px;}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      img.thumbnail {
+        width: 64px;
+        height: 90px;
+      }
       .id-group {
         white-space: nowrap;
       }
@@ -16,15 +19,14 @@
         display: inline-flex;
         align-items: center;
         font-family: monospace;
-        font-size: 1.2rem;
+        font-size: .7rem;
         height: 1.75em;
-        margin-top: 0.75em;
+        margin-top: 0.7em;
       }
       .id-key {
         border-radius: 0 4px 4px 0;
         padding-left: 0.5em;
         padding-right: 0.6em;
-        color: #337ab7;
         background-color: whitesmoke;
         margin-right: 0.4em;
       }
@@ -35,70 +37,57 @@
         color: white;
       }
       .id-arxiv {
-        background-color: #d9534f;
+        background-color: #dc3545;
       }
       .id-mr {
-        background-color: #337ab7;
+        background-color: #0d6efd;
       }
       .id-zbl {
-        background-color: #5bc0de;
+        background-color: #0dcaf0;
       }
       .id-doi {
         background-color: #0a0a0a;
       }
     </style>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Marco Varisco</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">About</a></li>
-            <li class="active"><a href="#">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="misc.html">Miscellanea</a></li>
-            <li><a href="seminar/">Seminar</a></li>
-            <li><a href="https://uupinfo.org">UUP</a></li>
-          </ul>
+    <nav class="navbar navbar-expand-sm sticky-top bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./">Marco Varisco</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./">About</a>
+            <a class="nav-link active" aria-current="page" href="research.html">Research</a>
+            <a class="nav-link" href="teaching.html">Teaching</a>
+            <a class="nav-link" href="misc.html">Misc</a>
+            <a class="nav-link" href="https://albanymath.github.io/ats/">Seminar</a>
+            <a class="nav-link" href="https://uupinfo.org">UUP</a>
+          </div>
         </div>
       </div>
-    </div>
-    <a href="photos/me@bb.jpg"><img src="photos/me@bb.min.jpg" class="img-responsive" alt="Photo of Marco Varisco by David Rosenthal at Wolfgang Lück’s 60th Birthday Conference in Münster"></a>
-    <div class="container">
-      <div class="main">
-        <h4>
-          Publications &amp; Preprints
-          &nbsp;
-          <span class="id pull-right">
-            <a href="https://arxiv.org/search/math?searchtype=author&query=Varisco,+Marco" class="btn btn-danger btn-xs" role="button">arXiv</a>
-            <a href="https://mathscinet.ams.org/mathscinet/search/publications.html?pg1=IID&s1=738359" class="btn btn-primary btn-xs" role="button">MR</a>
-            <a href="https://zbmath.org/?q=ai%3Avarisco.marco" class="btn btn-info btn-xs" role="button">Zbl</a>
-            <a href="https://orcid.org/0000-0002-5032-9459" class="btn btn-success btn-xs" role="button">ORCID</a>
+    </nav>
+    <a href="images/me@bb.jpg"><img src="images/me@bb.min.jpg" alt="Photo of Marco Varisco by David Rosenthal at Wolfgang Lück’s 60th Birthday Conference in Münster" class="img-fluid pb-4"></a>
+    <div class="container-md">
+      <h4 class="pb-3">
+          <span class="float-end ps-2 pb-3">
+            <a href="https://arxiv.org/search/math?searchtype=author&query=Varisco,+Marco" class="btn btn-sm btn-danger" role="button">arXiv</a>
+            <a href="https://mathscinet.ams.org/mathscinet/search/publications.html?pg1=IID&s1=738359" class="btn btn-sm btn-primary" role="button">MR</a>
+            <a href="https://zbmath.org/?q=ai%3Avarisco.marco" class="btn btn-sm btn-info" role="button">Zbl</a>
+            <a href="https://orcid.org/0000-0002-5032-9459" class="btn btn-sm btn-success" role="button">ORCID</a>
           </span>
+          Publications&nbsp;&amp;&nbsp;Preprints
         </h4>
-        <br>
-        <ul class="media-list">
-        <li class="media" id="VZ21">
-          <div class="media-left">
+        <div class="d-flex align-items-center pb-4" id="VZ21">
+          <div class="flex-shrink-0">
             <a href="https://onlinelibrary.wiley.com/share/author/QRYQUUSQCK2UF7PKSSV3?target=10.1112/blms.12534">
-              <img class="media-object" alt="cover image" src="thumbnails/Bull%20LMS.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/Bull%20LMS.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Equivariant Morse theory on Vietoris–Rips complexes and universal spaces for proper actions</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Equivariant Morse theory on Vietoris–Rips complexes and universal spaces for proper actions</span><br>
             with
             <a href="https://www.albany.edu/~mz498674/">Matthew Zaremsky</a>.<br>
             <em>Bulletin of the London Mathematical Society</em> 53 (2021), no.&nbsp;6, 1724&ndash;1739.<br>
@@ -107,15 +96,15 @@
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A07729434">07729434</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1112/blms.12534">10.1112/blms.12534</a></span></span>
           </div>
-        </li>
-        <li class="media" id="LRRV19">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4" id="LRRV19">
+          <div class="flex-shrink-0">
             <a href="https://www.degruyter.com/document/doi/10.1515/crelle-2017-0023/html">
-              <img class="media-object" alt="cover image" src="thumbnails/Crelle.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/Crelle.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Assembly maps for topological cyclic homology of group algebras</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Assembly maps for topological cyclic homology of group algebras</span><br>
             with
             <a href="https://him-lueck.uni-bonn.de">Wolfgang L&uuml;ck</a>,
             <a href="https://www.mi.fu-berlin.de/math/groups/top/members/Professoren/reich.html">Holger Reich</a>,
@@ -127,15 +116,15 @@
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1428.19002">1428.19002</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1515/crelle-2017-0023">10.1515/crelle-2017-0023</a></span></span>
           </div>
-        </li>
-        <li class="media" id="RV18">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4" id="RV18">
+          <div class="flex-shrink-0">
             <a href="https://www.degruyter.com/document/doi/10.1515/9783110452150-001/html">
-              <img class="media-object" alt="cover image" src="thumbnails/Space%20Time%20Matter.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/Space%20Time%20Matter.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Algebraic <em>K</em>-theory, assembly maps, controlled algebra, and trace methods</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Algebraic <em>K</em>-theory, assembly maps, controlled algebra, and trace methods</span><br>
             with
             <a href="https://www.mi.fu-berlin.de/math/groups/top/members/Professoren/reich.html">Holger Reich</a>.<br>
             <em>Space &ndash; Time &ndash; Matter. Analytic and Geometric Structures</em>, 1&ndash;50, De Gruyter, 2018.<br>
@@ -145,15 +134,15 @@
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1515/9783110452150-001">10.1515/9783110452150-001</a></span></span>
             
           </div>
-        </li>
-        <li class="media" id="GV18">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4" id="GV18">
+          <div class="flex-shrink-0">
             <a href="https://www.cambridge.org/core/books/geometric-and-cohomological-group-theory/on-thompsons-group-t-and-algebraic-ktheory/E58FF9856FACD8A3F12A466E35F9A8FE">
-              <img class="media-object" alt="cover image" src="thumbnails/Geometric%20and%20Cohomological%20Group%20Theory.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/Geometric%20and%20Cohomological%20Group%20Theory.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">On Thompson&rsquo;s group&nbsp;<em>T</em> and algebraic <em>K</em>-theory</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">On Thompson&rsquo;s group&nbsp;<em>T</em> and algebraic <em>K</em>-theory</span><br>
             with
             <a href="https://www.math.binghamton.edu/ross/">Ross Geoghegan</a>.<br>
             <em>Geometric and Cohomological Group Theory</em>, London Mathematical Society Lecture Note Series, vol.&nbsp;444, 34&ndash;45, Cambridge University Press, 2018.<br>
@@ -162,15 +151,15 @@
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1430.19003">1430.19003</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1017/9781316771327.005">10.1017/9781316771327.005</a></span></span>
           </div>
-        </li>
-        <li class="media" id="LRRV17">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4" id="LRRV17">
+          <div class="flex-shrink-0">
             <a href="https://www.sciencedirect.com/science/article/pii/S0001870816301177/pdfft">
-              <img class="media-object" alt="cover image" src="thumbnails/Advances.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/Advances.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Algebraic <em>K</em>-theory of group rings and the cyclotomic trace map</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Algebraic <em>K</em>-theory of group rings and the cyclotomic trace map</span><br>
             with
             <a href="https://him-lueck.uni-bonn.de">Wolfgang L&uuml;ck</a>,
             <a href="https://www.mi.fu-berlin.de/math/groups/top/members/Professoren/reich.html">Holger Reich</a>,
@@ -181,17 +170,17 @@
             <span class="id-group"><span class="id-type id-mr      ">MR</span><span class="id-key"><a href="https://mathscinet.ams.org/mathscinet-getitem?mr=3558224">3558224</a></span>
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1357.19002">1357.19002</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1016/j.aim.2016.09.004">10.1016/j.aim.2016.09.004</a></span></span>
-            <a href="files/150524%20Lehigh.pdf" class="btn btn-default btn-xs" role="button">slides</a>
+            <a href="files/150524%20Lehigh.pdf" class="btn btn-sm btn-link" role="button">slides</a>
           </div>
-        </li>
-        <li class="media" id="RV16">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4" id="RV16">
+          <div class="flex-shrink-0">
             <a href="https://msp.org/agt/2016/16-3/agt-v16-n3-p11-p.pdf">
-              <img class="media-object" alt="cover image" src="thumbnails/AGT.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/AGT.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">On the Adams isomorphism for equivariant orthogonal spectra</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">On the Adams isomorphism for equivariant orthogonal spectra</span><br>
             with
             <a href="https://www.mi.fu-berlin.de/math/groups/top/members/Professoren/reich.html">Holger Reich</a>.<br>
             <em>Algebraic &amp; Geometric Topology</em> 16 (2016), no.&nbsp;3, 1493&ndash;1566.<br>
@@ -200,15 +189,15 @@
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1350.55015">1350.55015</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.2140/agt.2016.16.1493">10.2140/agt.2016.16.1493</a></span></span>
           </div>
-        </li>
-        <li class="media" id="TV15">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4" id="TV15">
+          <div class="flex-shrink-0">
             <a href="https://www.ams.org/journals/proc/2015-143-12/S0002-9939-2015-12643-3/S0002-9939-2015-12643-3.pdf">
-              <img class="media-object" alt="cover image" src="thumbnails/Proc%20AMS.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/Proc%20AMS.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Modules over categories and Betti posets of monomial ideals</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Modules over categories and Betti posets of monomial ideals</span><br>
             with
             <a href="https://www.albany.edu/~tchernev/">Alexandre Tchernev</a>.<br>
             <em>Proceedings of the American Mathematical Society</em> 143 (2015), no.&nbsp;12, 5113&ndash;5128.<br>
@@ -217,15 +206,15 @@
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1330.13018">1330.13018</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1090/proc/12643">10.1090/proc/12643</a></span></span>
           </div>
-        </li>
-        <li class="media" id="LRV03">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4" id="LRV03">
+          <div class="flex-shrink-0">
             <a href="https://access.portico.org/stable?au=pgg1zfpb6p8">
-              <img class="media-object" alt="cover image" src="thumbnails/K-Theory.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/K-Theory.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Commuting homotopy limits and smash products</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Commuting homotopy limits and smash products</span><br>
             with
             <a href="https://him-lueck.uni-bonn.de">Wolfgang L&uuml;ck</a>
             and
@@ -236,58 +225,54 @@
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1053.55004">1053.55004</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1023/B:KTHE.0000018387.87156.c4">10.1023/B:KTHE.0000018387.87156.c4</a></span></span>
           </div>
-        </li>
-        <li class="media">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4">
+          <div class="flex-shrink-0">
             <a href="https://arxiv.org/pdf/1605.09748">
-              <img class="media-object" alt="cover image" src="thumbnails/1605.09748.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/1605.09748.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Betti categories of graded modules and applications to monomial ideals and toric rings</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Betti categories of graded modules and applications to monomial ideals and toric rings</span><br>
             with
             <a href="https://www.albany.edu/~tchernev/">Alexandre Tchernev</a>.<br>
             Preprint, 2016.<br>
             <span class="id-group"><span class="id-type id-arxiv">arXiv</span><span class="id-key"><a href="https://arxiv.org/abs/1605.09748">1605.09748</a></span></span>
           </div>
-        </li>
-        </ul>
-        <br>
-        <h4>Other</h4>
-        <br>
-        <ul class="media-list">
-        <li class="media">
-          <div class="media-left">
-              <img class="media-object" alt="cover image" src="thumbnails/K.png">
+        </div>
+        <h4 class="py-3">Other</h4>
+        <div class="d-flex align-items-center pb-4">
+          <div class="flex-shrink-0">
+              <img class="thumbnail" alt="cover image" src="thumbnails/K.png">
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Lecture notes on algebraic <em>K</em>-theory</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Lecture notes on algebraic <em>K</em>-theory</span><br>
             Lecture notes based on graduate courses taught at Binghamton University and University at Albany, SUNY, 2012.<br>
           </div>
-        </li>
-        <li class="media">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4">
+          <div class="flex-shrink-0">
             <a href="https://intlpress.com/site/pub/pages/books/items/00000262/">
-              <img class="media-object" alt="cover image" src="thumbnails/Cohomology%20of%20Groups%20and%20Algebraic%20K-Theory.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/Cohomology%20of%20Groups%20and%20Algebraic%20K-Theory.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Higher <em>K</em>-theory of algebraic integers and the cohomology of arithmetic groups</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Higher <em>K</em>-theory of algebraic integers and the cohomology of arithmetic groups</span><br>
             <a href="https://www.ihes.fr/~soule/">Christophe Soul&eacute;</a>,
             notes by Marco Varisco.<br>
             <em>Cohomology of Groups and Algebraic K-Theory</em>, Advanced Lectures in Mathematics, vol.&nbsp;12, 503&#8211;517, International Press, 2010.<br>
             <span class="id-group"><span class="id-type id-mr      ">MR</span><span class="id-key"><a href="https://mathscinet.ams.org/mathscinet-getitem?mr=2655187">2655187</a></span>
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1204.19001">1204.19001</a></span></span>
           </div>
-        </li>
-        <li class="media">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4">
+          <div class="flex-shrink-0">
             <a href="https://link.springer.com/book/10.1007%2Fb137100">
-              <img class="media-object" alt="cover image" src="thumbnails/The%20Novikov%20Conjecture.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/The%20Novikov%20Conjecture.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Poincar&eacute; duality and algebraic <em>L</em>-groups</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Poincar&eacute; duality and algebraic <em>L</em>-groups</span><br>
             with
             <a href="https://him-lueck.uni-bonn.de">Wolfgang L&uuml;ck</a>.<br>
             Chapter 17 in <em>The Novikov Conjecture. Geometry and Algebra</em>, <a href="https://www.math.uni-bonn.de/members?mode=portrait&uid=kreck">Matthias Kreck</a> and <a href="https://him-lueck.uni-bonn.de">Wolfgang L&uuml;ck</a>, Oberwolfach Seminars, vol.&nbsp;33, 119&#8211;131, Birk&auml;user, 2005.<br>
@@ -295,23 +280,20 @@
                                    <span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1058.19001">1058.19001</a></span></span>
             <span class="id-group"><span class="id-type id-doi    ">doi</span><span class="id-key"><a href="https://doi.org/10.1007/b137100">10.1007/b137100</a></span></span>
           </div>
-        </li>
-        <li class="media">
-          <div class="media-left">
+        </div>
+        <div class="d-flex align-items-center pb-4">
+          <div class="flex-shrink-0">
             <a href="https://zbmath.org/?q=an%3A1126.19004">
-              <img class="media-object" alt="cover image" src="thumbnails/L.png">
+              <img class="thumbnail" alt="cover image" src="thumbnails/L.png">
             </a>
           </div>
-          <div class="media-body">
-            <h5 class="media-heading">Algebraic <em>L</em>-theory and triangular Witt groups</h5>
+          <div class="flex-grow-1 ms-3 lh-sm">
+            <span class="fw-medium">Algebraic <em>L</em>-theory and triangular Witt groups</span><br>
             Ph.D. thesis, <a href="https://www.uni-muenster.de/FB10/">Universit&auml;t M&uuml;nster</a>, Germany,&nbsp;2006.<br>
             <span class="id-group"><span class="id-type id-zbl    ">Zbl</span><span class="id-key"><a href="https://zbmath.org/?q=an%3A1126.19004">1126.19004</a></span></span>
           </div>
-        </li>
-        </ul>
-      </div>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script src="code/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
   </body>
 </html>
